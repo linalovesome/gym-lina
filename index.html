@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitPower - Тренажерний зал</title>
+    <meta name="description" content="FitPower - сучасний тренажерний зал з професійним обладнанням та кваліфікованими тренерами">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo.png" alt="FitPower Logo">
+                    </a>
+                </div>
+                
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="index.html" class="nav-link active">Головна</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link">Про нас</a></li>
+                        <li class="nav-item"><a href="services.html" class="nav-link">Послуги</a></li>
+                        <li class="nav-item"><a href="schedule.html" class="nav-link">Розклад</a></li>
+                        <li class="nav-item"><a href="trainers.html" class="nav-link">Тренери</a></li>
+                        <li class="nav-item"><a href="gallery.html" class="nav-link">Галерея</a></li>
+                        <li class="nav-item"><a href="blog.html" class="nav-link">Блог</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Контакти</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header-actions">
+                    <a href="login.html" class="btn btn-outline btn-sm">Увійти</a>
+                </div>
+                
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>  
+    <div class="mobile-menu">
+        <div class="container">
+            <ul class="mobile-nav-list">
+                <li class="mobile-nav-item"><a href="index.html" class="mobile-nav-link">Головна</a></li>
+                <li class="mobile-nav-item"><a href="about.html" class="mobile-nav-link">Про нас</a></li>
+                <li class="mobile-nav-item"><a href="services.html" class="mobile-nav-link">Послуги</a></li>
+                <li class="mobile-nav-item"><a href="schedule.html" class="mobile-nav-link">Розклад</a></li>
+                <li class="mobile-nav-item"><a href="trainers.html" class="mobile-nav-link">Тренери</a></li>
+                <li class="mobile-nav-item"><a href="gallery.html" class="mobile-nav-link">Галерея</a></li>
+                <li class="mobile-nav-item"><a href="blog.html" class="mobile-nav-link">Блог</a></li>
+                <li class="mobile-nav-item"><a href="contact.html" class="mobile-nav-link">Контакти</a></li>
+                <li class="mobile-nav-item"><a href="login.html" class="mobile-nav-link">Увійти</a></li>
+            </ul>
+        </div>
+    </div>
+    <main>
+        <section class="hero" style="background-image: url('assets/images/hero-bg.jpg'); background-size: cover; background-position: center;">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Побудуй своє ідеальне тіло</h1>
+                    <p>Професійне обладнання, досвідчені тренери та атмосфера, що мотивує</p>
+                    <div class="hero-buttons">
+                        <a href="services.html" class="btn btn-primary">Наші послуги</a>
+                        <a href="contact.html" class="btn btn-outline">Зв'язатися з нами</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="advantages">
+            <div class="container">
+                <h2 class="section-title">Чому FitPower?</h2>
+                <div class="advantages-grid">
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <i class="fas fa-dumbbell"></i>
+                        </div>
+                        <h3>Сучасне обладнання</h3>
+                        <p>Тренажери від провідних світових виробників для ефективних тренувань</p>
+                    </div>
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Професійні тренери</h3>
+                        <p>Наші інструктори мають міжнародні сертифікати та багаторічний досвід</p>
+                    </div>
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Гнучкий графік</h3>
+                        <p>Зал працює з 7:00 до 23:00 без вихідних для вашої зручності</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="services-preview">
+            <div class="container">
+                <h2 class="section-title">Наші послуги</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <img src="assets/images/service-personal.jpg" alt="Персональні тренування">
+                        <h3>Персональні тренування</h3>
+                        <p>Індивідуальний підхід та програма тренувань для досягнення ваших цілей</p>
+                        <a href="services.html#personal" class="btn-link">Дізнатися більше</a>
+                    </div>
+                    <div class="service-card">
+                        <img src="assets/images/service-group.jpg" alt="Групові заняття">
+                        <h3>Групові заняття</h3>
+                        <p>Різноманітні програми: від йоги до інтенсивних інтервальних тренувань</p>
+                        <a href="services.html#group" class="btn-link">Дізнатися більше</a>
+                    </div>
+                    <div class="service-card">
+                        <img src="assets/images/service-nutrition.jpg" alt="Консультації з харчування">
+                        <h3>Консультації з харчування</h3>
+                        <p>Професійні рекомендації для правильного харчування та результативних тренувань</p>
+                        <a href="services.html#nutrition" class="btn-link">Дізнатися більше</a>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="services.html" class="btn btn-primary">Всі послуги</a>
+                </div>
+            </div>
+        </section>
+        <section class="trainers-preview">
+            <div class="container">
+                <h2 class="section-title">Наші тренери</h2>
+                <div class="trainers-slider" id="trainersSlider">
+                    <div class="trainer-card">
+                        <img src="assets/images/trainers/trainer1.png" alt="Фітнес Філл">
+                        <h3>Фітнес Філл</h3>
+                        <p class="trainer-specialization">Силові тренування</p>
+                        <p>5 років досвіду, сертифікований тренер CrossFit L2</p>
+                    </div>
+                    <div class="trainer-card">
+                        <img src="assets/images/trainers/trainer2.png" alt="Ольга Ковальчук">
+                        <h3>Ольга Ковальчук</h3>
+                        <p class="trainer-specialization">Функціональний тренінг</p>
+                        <p>3 років досвіду, магістр спортивної фізіології</p>
+                    </div>
+                    <div class="trainer-card">
+                        <img src="assets/images/trainers/trainer3.jpg" alt="Максим Іванов">
+                        <h3>Максим Іванов</h3>
+                        <p class="trainer-specialization">Бодібілдинг</p>
+                        <p>12 років досвіду, чемпіон України з бодібілдингу</p>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="trainers.html" class="btn btn-primary">Всі тренери</a>
+                </div>
+            </div>
+        </section>
+        <section class="contact-form-section">
+            <div class="container">
+                <div class="contact-form-container">
+                    <div class="contact-form-info">
+                        <h2>Отримайте безкоштовну консультацію</h2>
+                        <p>Заповніть форму, і наш менеджер зв'яжеться з вами протягом години</p>
+                    </div>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" name="name" id="name" placeholder="Ваше ім'я" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" id="phone" placeholder="Ваш телефон" required>
+                        </div>
+                        <div class="form-group">
+                            <select name="service" id="service">
+                                <option value="">Оберіть послугу</option>
+                                <option value="personal">Персональний тренінг</option>
+                                <option value="group">Групові заняття</option>
+                                <option value="nutrition">Консультація з харчування</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">Відправити</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="assets/images/logo.png" alt="FitPower Logo">
+                    </div>
+                    <p class="footer-description">
+                        FitPower - це сучасний тренажерний зал, де ви можете досягти своїх фітнес-цілей 
+                        з допомогою професійних тренерів та новітнього обладнання.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+
+
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div> 
+                <div class="footer-column">
+                    <h3 class="footer-heading">Контакти</h3>
+                    <ul class="contact-list">
+                        <li class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>вул. Велика Васильківська, 15, м. Київ</span>
+                        </li>
+                        <li class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+380991234567">+38 (099) 123-45-67</a>
+                        </li>
+                        <li class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:info@fitpower.com">info@fitpower.com</a>
+                        </li>
+                        <li class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Пн-Нд: 7:00 - 23:00</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading">Швидкі посилання</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">Про нас</a></li>
+                        <li><a href="services.html">Послуги</a></li>
+                        <li><a href="schedule.html">Розклад</a></li>
+                        <li><a href="trainers.html">Тренери</a></li>
+                        <li><a href="gallery.html">Галерея</a></li>
+                        <li><a href="blog.html">Блог</a></li>
+                        <li><a href="contact.html">Контакти</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading">Підпишіться на новини</h3>
+                    <p>Будьте в курсі всіх новин та спеціальних пропозицій</p>
+                    <form class="subscribe-form" id="subscribeForm">
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Ваш e-mail" required>
+                            <button type="submit" class="btn-subscribe">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>   
+            <div class="footer-bottom">
+                <div class="copyright">
+                    &copy; <span id="currentYear"></span> Create by Бондарь Ангеліна. Всі права захищені.
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="privacy.html">Політика конфіденційності</a>
+                    <a href="terms.html">Умови використання</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a href="#" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/slider.js"></script>
+</body>
+</html>

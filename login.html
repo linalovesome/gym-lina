@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизація - FitPower</title>
+    <meta name="description" content="Увійдіть у свій обліковий запис FitPower для доступу до особистого кабінету">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Прелоадер -->
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+    
+    <!-- Хедер -->
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo.png" alt="FitPower Logo">
+                    </a>
+                </div>
+                
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Головна</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link">Про нас</a></li>
+                        <li class="nav-item"><a href="services.html" class="nav-link">Послуги</a></li>
+                        <li class="nav-item"><a href="schedule.html" class="nav-link">Розклад</a></li>
+                        <li class="nav-item"><a href="trainers.html" class="nav-link">Тренери</a></li>
+                        <li class="nav-item"><a href="gallery.html" class="nav-link">Галерея</a></li>
+                        <li class="nav-item"><a href="blog.html" class="nav-link">Блог</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Контакти</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header-actions">
+                    <a href="login.html" class="btn btn-outline btn-sm active">Увійти</a>
+                </div>
+                
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="mobile-menu">
+        <div class="container">
+            <ul class="mobile-nav-list">
+                <li class="mobile-nav-item"><a href="index.html" class="mobile-nav-link">Головна</a></li>
+                <li class="mobile-nav-item"><a href="about.html" class="mobile-nav-link">Про нас</a></li>
+                <li class="mobile-nav-item"><a href="services.html" class="mobile-nav-link">Послуги</a></li>
+                <li class="mobile-nav-item"><a href="schedule.html" class="mobile-nav-link">Розклад</a></li>
+                <li class="mobile-nav-item"><a href="trainers.html" class="mobile-nav-link">Тренери</a></li>
+                <li class="mobile-nav-item"><a href="gallery.html" class="mobile-nav-link">Галерея</a></li>
+                <li class="mobile-nav-item"><a href="blog.html" class="mobile-nav-link">Блог</a></li>
+                <li class="mobile-nav-item"><a href="contact.html" class="mobile-nav-link">Контакти</a></li>
+                <li class="mobile-nav-item"><a href="login.html" class="mobile-nav-link active">Увійти</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Авторизація</h1>
+                <div class="breadcrumbs">
+                    <a href="index.html">Головна</a> / <span>Авторизація</span>
+                </div>
+            </div>
+        </section>
+        
+
+        <section class="auth-section">
+            <div class="container">
+                <div class="auth-container">
+                    <div class="auth-form-container">
+                        <h2>Вхід в особистий кабінет</h2>
+                        
+                        <div id="loginError" class="form-error" style="display: none;">
+                            <i class="fas fa-exclamation-circle"></i>
+                            <p id="errorMessage">Невірний email або пароль. Спробуйте ще раз.</p>
+                        </div>
+                        
+                        <form id="loginForm" class="auth-form">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="password">Пароль</label>
+                                <div class="password-field">
+                                    <input type="password" id="password" name="password" required>
+                                    <button type="button" class="toggle-password">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <div class="checkbox-group">
+                                    <input type="checkbox" id="remember" name="remember">
+                                    <label for="remember">Запам'ятати мене</label>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary btn-block">Увійти</button>
+                            </div>
+                            
+                            <div class="form-link">
+                                <a href="forgot-password.html">Забули пароль?</a>
+                            </div>
+                        </form>
+                        
+                        <div class="auth-separator">
+                            <span>або</span>
+                        </div>
+                        
+                        <div class="social-auth">
+                            <button class="btn btn-facebook">
+                                <i class="fab fa-facebook-f"></i>
+                                <span>Увійти через Facebook</span>
+                            </button>
+                            
+                            <button class="btn btn-google">
+                                <i class="fab fa-google"></i>
+                                <span>Увійти через Google</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="auth-info">
+                        <h3>Ще не зареєстровані?</h3>
+                        <p>Зареєструйтесь, щоб отримати доступ до розширених можливостей:</p>
+                        <ul>
+                            <li>Управління абонементами</li>
+                            <li>Запис на групові тренування</li>
+                            <li>Перегляд історії тренувань</li>
+                            <li>Персональні програми тренувань</li>
+                            <li>Спеціальні пропозиції та акції</li>
+                        </ul>
+                        <a href="register.html" class="btn btn-outline">Зареєструватися</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+
+                        <img src="assets/images/logo.png" alt="FitPower Logo">
+                    </div>
+                    <p class="footer-description">
+                        FitPower - це сучасний тренажерний зал, де ви можете досягти своїх фітнес-цілей 
+                        з допомогою професійних тренерів та новітнього обладнання.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-heading">Контакти</h3>
+                    <ul class="contact-list">
+                        <li class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>вул. Велика Васильківська, 15, м. Київ</span>
+                        </li>
+                        <li class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+380991234567">+38 (099) 123-45-67</a>
+                        </li>
+                        <li class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:info@fitpower.com">info@fitpower.com</a>
+                        </li>
+                        <li class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Пн-Нд: 7:00 - 23:00</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-heading">Швидкі посилання</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">Про нас</a></li>
+                        <li><a href="services.html">Послуги</a></li>
+                        <li><a href="schedule.html">Розклад</a></li>
+                        <li><a href="trainers.html">Тренери</a></li>
+                        <li><a href="gallery.html">Галерея</a></li>
+                        <li><a href="blog.html">Блог</a></li>
+                        <li><a href="contact.html">Контакти</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-heading">Підпишіться на новини</h3>
+                    <p>Будьте в курсі всіх новин та спеціальних пропозицій</p>
+                    <form class="subscribe-form" id="subscribeForm">
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Ваш e-mail" required>
+                            <button type="submit" class="btn-subscribe">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    &copy; <span id="currentYear"></span> Create by Бондарь Ангеліна. Всі права захищені.
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="privacy.html">Політика конфіденційності</a>
+                    <a href="terms.html">Умови використання</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a href="#" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <script src="assets/js/main.js"></script>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const togglePassword = document.querySelector('.toggle-password');
+        const passwordField = document.querySelector('#password');
+        
+        if (togglePassword && passwordField) {
+            togglePassword.addEventListener('click', function() {
+                const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
+                passwordField.setAttribute('type', type);
+                this.querySelector('i').classList.toggle('fa-eye');
+                this.querySelector('i').classList.toggle('fa-eye-slash');
+            });
+        }
+        
+        const loginForm = document.getElementById('loginForm');
+        const loginError = document.getElementById('loginError');
+        const errorMessage = document.getElementById('errorMessage');
+        
+        if (loginForm) {
+            loginForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const email = document.getElementById('email').value;
+                const password = document.getElementById('password').value;
+            
+                if (email === 'demo@fitpower.com' && password === 'demo123') {
+                    window.location.href = 'profile.html';
+                } else {
+                    loginError.style.display = 'block';
+                    errorMessage.textContent = 'Невірний email або пароль. Спробуйте ще раз.';
+                }
+            });
+        }
+        const currentYearSpan = document.getElementById('currentYear');
+        if (currentYearSpan) {
+            currentYearSpan.textContent = new Date().getFullYear();
+        }
+    });
+    </script>
+</body>
+</html>
+  
+
+

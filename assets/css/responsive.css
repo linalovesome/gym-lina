@@ -1,0 +1,390 @@
+/*--------------------------------------------------------------
+# Адаптивні стилі
+--------------------------------------------------------------*/
+
+/* Десктопні екрани (до 1200px) */
+@media screen and (max-width: 1200px) {
+    .container {
+      max-width: 960px;
+    }
+    
+    .hero h1 {
+      font-size: 3rem;
+    }
+  }
+  
+  /* Планшети (до 992px) */
+  @media screen and (max-width: 992px) {
+    .container {
+      max-width: 720px;
+    }
+    
+    /* Шапка */
+    .main-nav {
+      display: none;
+    }
+    
+    .mobile-menu-toggle {
+      display: flex;
+    }
+    
+    /* Герой */
+    .hero {
+      height: 60vh;
+    }
+    
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+    
+    .hero-content {
+      padding: 30px;
+    }
+    
+    /* Переваги */
+    .advantages-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Послуги */
+    .services-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Тренери */
+    .trainers-slider {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      gap: 20px;
+      padding-bottom: 20px;
+    }
+    
+    .trainer-card {
+      flex: 0 0 calc(50% - 10px);
+      min-width: 280px;
+    }
+    
+    /* Футер */
+    .footer-content {
+      gap: 40px;
+    }
+    
+    .footer-column {
+      flex: 0 0 calc(50% - 20px);
+    }
+  
+    /* Розклад */
+    .schedule-content {
+      overflow-x: auto;
+    }
+  
+    .schedule-time {
+      flex: 0 0 80px;
+    }
+  
+    .schedule-trainer {
+      flex: 0 0 120px;
+    }
+  
+    .schedule-level {
+      flex: 0 0 100px;
+    }
+  
+    .schedule-info {
+      grid-template-columns: 1fr;
+    }
+  
+    /* Контакти */
+    .contact-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    /* Авторизація */
+    .auth-container {
+      grid-template-columns: 1fr;
+    }
+  
+    /* Профіль */
+    .profile-container {
+      grid-template-columns: 1fr;
+    }
+  
+    /* Галерея */
+    .gallery-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /* Великі мобільні (до 768px) */
+  @media screen and (max-width: 768px) {
+    .container {
+      max-width: 540px;
+    }
+    
+    /* Герой */
+    .hero {
+      height: auto;
+      padding: 80px 0;
+    }
+    
+    .hero h1 {
+      font-size: 2rem;
+    }
+    
+    .hero p {
+      font-size: 1rem;
+    }
+    
+    /* Секційні заголовки */
+    .section-title {
+      font-size: 2rem;
+    }
+    
+    /* Переваги */
+    .advantages {
+      padding: 60px 0;
+    }
+    
+    .advantages-grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+    
+    /* Послуги */
+    .services-preview {
+      padding: 60px 0;
+    }
+    
+    .services-grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+    
+    /* Тренери */
+    .trainers-preview {
+      padding: 60px 0;
+    }
+    
+    .trainer-card {
+      flex: 0 0 100%;
+      min-width: 100%;
+    }
+    
+    /* Форма зворотного зв'язку */
+    .contact-form {
+      flex-direction: column;
+    }
+    
+    .form-group {
+      flex: 0 0 100%;
+    }
+    
+    /* Футер */
+    .footer {
+      padding: 60px 0 30px;
+    }
+    
+    .footer-content {
+      flex-direction: column;
+      gap: 30px;
+    }
+    
+    .footer-column {
+      flex: 0 0 100%;
+    }
+    
+    .footer-bottom {
+      flex-direction: column;
+      gap: 15px;
+      text-align: center;
+    }
+    
+    .footer-bottom-links {
+      justify-content: center;
+    }
+    
+    /* Back to top */
+    .back-to-top {
+      width: 40px;
+      height: 40px;
+      right: 15px;
+      bottom: 15px;
+    }
+  
+    /* Розклад */
+    .schedule-tabs-nav {
+      overflow-x: auto;
+      white-space: nowrap;
+      padding-bottom: 10px;
+    }
+  
+    .schedule-tab-btn {
+      flex: 0 0 auto;
+    }
+  
+    .schedule-header {
+      display: none;
+    }
+  
+    .schedule-row {
+      flex-direction: column;
+      padding: 15px;
+    }
+  
+    .schedule-col {
+      padding: 5px 0;
+    }
+  
+    .schedule-time {
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+  
+    .schedule-time span:nth-child(2) {
+      margin: 0 5px;
+    }
+  
+    .schedule-level {
+      justify-content: flex-start;
+    }
+  
+    /* Контакти */
+    .contact-info {
+      grid-template-columns: 1fr;
+    }
+  
+    .contact-form-wrap {
+      padding: 20px;
+    }
+  
+    /* Авторизація */
+    .auth-form-container {
+      padding: 20px;
+    }
+  
+    .btn-group {
+      flex-direction: column;
+    }
+  
+    /* Профіль */
+    .profile-content {
+      padding: 20px;
+    }
+  
+    /* Галерея */
+    .gallery-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .filter-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .filter-btn {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+  
+
+/* Малі мобільні (до 576px) */
+@media screen and (max-width: 576px) {
+    /* Загальні налаштування */
+    body {
+      font-size: 14px;
+    }
+    
+    /* Шапка */
+    .header-inner {
+      padding: 10px 0;
+    }
+    
+    .logo img {
+      max-height: 40px;
+    }
+    
+    /* Герой */
+    .hero {
+      padding: 60px 0;
+      margin-top: 70px;
+    }
+    
+    .hero h1 {
+      font-size: 1.8rem;
+    }
+    
+    .hero-content {
+      padding: 20px 10px;
+    }
+    
+    .hero-buttons {
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    .hero-buttons .btn {
+      width: 100%;
+    }
+    
+    /* Секційні заголовки */
+    .section-title {
+      font-size: 1.8rem;
+      margin-bottom: 30px;
+    }
+    
+    /* Всі секції */
+    .advantages,
+    .services-preview,
+    .trainers-preview,
+    .contact-form-section {
+      padding: 50px 0;
+    }
+    
+    /* Форма зворотного зв'язку */
+    .contact-form-info h2 {
+      font-size: 1.8rem;
+    }
+    
+    /* Мобільне меню */
+    .mobile-menu {
+      top: 70px;
+    }
+  
+    /* Сторінка заголовок */
+    .page-header {
+      padding: 100px 0 40px;
+    }
+  
+    .page-header h1 {
+      font-size: 2rem;
+    }
+  
+    /* Розклад */
+    .schedule-tab h2 {
+      font-size: 1.8rem;
+    }
+  
+    /* Контакти */
+    .map-container {
+      height: 300px;
+    }
+  
+    /* Авторизація */
+    .register-success {
+      padding: 30px 15px;
+    }
+  
+    .success-icon {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .success-icon i {
+      font-size: 2.5rem;
+    }
+  }
+ 
+ 
+  
+  
